@@ -1,2 +1,2 @@
 # AI-Powered-Photo-Querying (In Progress)
-A web application that allows users to upload their photos and utilize AI-powered querying to find specific images based on content, date, and more. Built to provide a seamless photo management experience using the OpenAI API.
+A proof-of-concept web application that allows users to upload their photos and utilize AI-powered querying (OpenAI API) to find specific images based on content, date, and more. Built to provide a seamless photo management experience.
