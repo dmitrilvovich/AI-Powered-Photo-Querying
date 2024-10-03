@@ -30,6 +30,15 @@
     <script>
         document.getElementById('search-button').addEventListener('click', searchImages);
 
+        const allImages = [
+            '1111111111111.jpg',
+            '2222222222222.jpg',
+        ];
+
+        function loadAllImages() {
+            displayImages(allImages);
+        }
+        
         async function searchImages() {
             const query = document.getElementById('search-input').value.trim();
             if (!query) {
