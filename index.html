@@ -38,6 +38,8 @@
         function loadAllImages() {
             displayImages(allImages);
         }
+
+        window.addEventListener('load', loadAllImages);
         
         async function searchImages() {
             const query = document.getElementById('search-input').value.trim();
