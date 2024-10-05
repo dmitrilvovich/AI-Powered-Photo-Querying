@@ -6,11 +6,10 @@ The app uses the OpenAI API to process the queries, which compares the natural l
 
 # Current Issues and Limitations
 As the current version is still a first makeshift upload, the code does contain a few hiccups:
-1. Currently, after making the first query, any subsequent queries still send the first query instead of the new one. I believe this might be due to cache and will solve it as soon as I can.
-2. The program does not currently save previous queries and results. This means subsequent querying/filtering after an initial query are treated as initial queries. I will add code to save query history such that multi-step queries will be possible.
-3. The app does not have any image upload features at the moment. I am planning on implementing this by having any image upload go through a safety check using the OpenAI API before saving the image and making a descripition of the image (to prevent any inappropriate images to show up).
-4. Only 2 images are uploaded to the app at the moment, which eliminates the convenience of my app. I will upload more once I get the time.
-5. The OpenAI API bills are largely based on the amount of data sent to the API. As you can imagine, this means that sending all those detailed image descriptions can be relatively costly. My current plan is to have OpenAI return shorter descriptions by asking for detailed descriptions using key words. Future versions might also get rid of the problem much more effectively.
+1. The program does not currently save previous queries and results. This means subsequent querying/filtering after an initial query are treated as initial queries. I will add code to save query history such that multi-step queries will be possible.
+2. The app does not have any image upload features at the moment. I am planning on implementing this by having any image upload go through a safety check using the OpenAI API before saving the image and making a descripition of the image (to prevent any inappropriate images to show up).
+3. Only 2 images are uploaded to the app at the moment, which eliminates the convenience of my app. I will upload more once I get the time.
+4. The OpenAI API bills are largely based on the amount of data sent to the API. As you can imagine, this means that sending all those detailed image descriptions can be relatively costly. My current plan is to have OpenAI return shorter descriptions by asking for detailed descriptions using key words. Future versions might also get rid of the problem much more effectively.
 
 # Future Versions
 My goal for this project is to make it as efficient and accurate as possible. My main concern is that as the gallery grows in size, the computation time also grows very noticably (the OpenAI API bills would also reflect this).
