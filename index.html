@@ -58,6 +58,8 @@
             } catch (error) {
                 console.error('Error fetching images:', error);
             }
+
+            document.getElementById('search-input').value = '';
         }
 
         function displayImages(imageFiles) {
